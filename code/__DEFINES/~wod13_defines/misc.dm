@@ -1,0 +1,12 @@
+#define LUZHA_LAYER				41
+#define UNDERSHADOW_LAYER		40
+#define UPPER_EARS_LAYER		18
+#define DECAPITATION_BLOOD_LAYER	11
+#define PROTEAN_LAYER			10
+#define UNICORN_LAYER			9
+#define POTENCE_LAYER			8
+#define FORTITUDE_LAYER			7
+#define FIRING_EFFECT_LAYER		6
+#define BITE_LAYER				3
+#define FIGHT_LAYER				2
+#define SAY_LAYER				1
