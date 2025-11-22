@@ -2,6 +2,8 @@
 	//Shitty VtM vars I'm moving here so they're not strewn around the codebase
 	var/datum/vampireclane/clane
 
+	var/phonevoicetag = 10
+
 	var/image/suckbar
 	var/atom/suckbar_loc
 
@@ -9,4 +11,15 @@
 
 	var/willpower_auto = FALSE
 
+	var/base_body_mod = ""
+	var/icon/body_sprite
 
+/mob/living/carbon/human/Initialize(mapload)
+	. = ..()
+	phonevoicetag = length(GLOB.human_list)+10
+
+/mob/living/carbon/human/update_body()
+	. = ..()
+	for(var/obj/item/I in get_all_gear())
+		if(I)
+			I.update_bodyfied(src)
