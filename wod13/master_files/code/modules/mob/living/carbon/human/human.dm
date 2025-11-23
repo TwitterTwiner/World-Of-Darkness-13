@@ -11,6 +11,8 @@
 
 	var/willpower_auto = FALSE
 
+	var/roundstart_vampire = FALSE
+
 	var/base_body_mod = ""
 	var/icon/body_sprite
 

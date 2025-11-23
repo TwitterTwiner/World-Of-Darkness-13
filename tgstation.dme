@@ -6800,6 +6800,7 @@
 #include "wod13\modules\stubs.dm"
 #include "wod13\modules\pig\pig.dm"
 #include "wod13\modules\vtmb\archetypes.dm"
+#include "wod13\modules\vtmb\landmarks.dm"
 #include "wod13\modules\vtmb\electronics\p25.dm"
 #include "wod13\modules\vtmb\electronics\atms\atm.dm"
 #include "wod13\modules\vtmb\electronics\computers\app.dm"
@@ -6810,5 +6811,6 @@
 #include "wod13\modules\vtmb\electronics\phones\phone_contact.dm"
 #include "wod13\modules\vtmb\electronics\phones\phone_history.dm"
 #include "wod13\modules\vtmb\electronics\phones\phone_voice.dm"
+#include "wod13\modules\vtmb\vampire_clane\clane.dm"
 #include "wod13\modules\wod13\ambient.dm"
 // END_INCLUDE
