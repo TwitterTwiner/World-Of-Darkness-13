@@ -20,7 +20,7 @@
 	. = ..()
 	phonevoicetag = length(GLOB.human_list)+10
 
-/mob/living/carbon/human/update_body()
+/mob/living/carbon/human/update_body(is_creating = FALSE)
 	. = ..()
 	for(var/obj/item/I in get_all_gear())
 		if(I)

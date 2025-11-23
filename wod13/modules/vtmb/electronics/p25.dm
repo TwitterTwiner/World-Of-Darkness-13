@@ -580,7 +580,7 @@
 	. = ..()
 	check_signal()
 
-/mob/living/Moved()
+/mob/living/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	var/obj/item/p25radio/belt_radio = get_item_by_slot(ITEM_SLOT_BELT)
 	if(istype(belt_radio))
