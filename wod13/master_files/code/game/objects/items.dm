@@ -14,13 +14,14 @@
 	if(onflooricon)
 		icon = initial(icon)
 		pixel_w = initial(pixel_w)
+		update_icon()
 	if(body_worn && ishuman(M))
 		var/mob/living/carbon/human/BS = M
 		if(BS.body_sprite)
 			worn_icon = BS.body_sprite
 		else
 			worn_icon = initial(worn_icon)
-	update_icon()
+		update_icon()
 	..()
 
 /obj/item/dropped(mob/M)
@@ -31,12 +32,12 @@
 		cut_overlays()
 		if(onflooricon_state)
 			icon_state = onflooricon_state
-	update_icon()
+		update_icon()
 	..()
 
 /obj/item/Initialize(mapload)
 	..()
-	if(isturf(loc) && onflooricon)
+	if(onflooricon && isturf(loc))
 		icon = onflooricon
 		update_icon()
 	if(onflooricon_state)
