@@ -8,12 +8,12 @@
 
 /obj/item/stack/dollar
 
-/mob/living/carbon/human/npc
-/mob/living/carbon/human/npc/proc/Aggro(mob/M, attacked = FALSE)
+//mob/living/carbon/human/npc
+mob/living/carbon/human/npc/proc/Aggro(mob/M, attacked = FALSE)
 
 /mob/living/carbon/human/proc/AdjustHumanity(value, limit, forced = FALSE)
 /mob/living/carbon/human/proc/AdjustMasquerade(value, forced = FALSE)
-/mob/living/carbon/human/npc/proc/backinvisible(atom/A)
+//mob/living/carbon/human/npc/proc/backinvisible(atom/A)
 /mob/living/proc/CheckEyewitness(mob/living/source, mob/attacker, range = 0, affects_source = FALSE)
 
 /datum/morality_path
@@ -32,3 +32,8 @@
 	name = "Drink Blood"
 	icon = 'code/modules/wod13/disciplines.dmi'
 /atom/movable/screen/drinkblood/proc/bite()
+/proc/secret_vampireroll(dices_num = 1, hardness = 1, mob/living/rollperformer, stealthy = FALSE, decap_rolls = TRUE, autosuccesses = 0)
+/turf/open/floor/plating/shit
+/proc/get_a_willpower(mob/living/Living)
+/mob/living/carbon/proc/CheckFrenzyMove()
+	return TRUE
