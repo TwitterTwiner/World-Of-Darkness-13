@@ -44,6 +44,16 @@
 @include meta.load-css('./interfaces/Trophycase.scss');
 @include meta.load-css('./interfaces/Uplink.scss');
 @include meta.load-css('./interfaces/DetectiveBoard.scss');
+// WOD13 EDIT ADDITION START - VTMB
+@include meta.load-css('./interfaces/WindowsXP/System.scss');
+@include meta.load-css('./interfaces/WindowsXP/Notepad.scss');
+@include meta.load-css('./interfaces/WindowsXP/ICQ.scss');
+@include meta.load-css('./interfaces/WindowsXP/Error.scss');
+@include meta.load-css('./interfaces/WindowsXP/Gmail.scss');
+@include meta.load-css('./interfaces/WindowsXP/News.scss');
+@include meta.load-css('./interfaces/WindowsXP/LoginScreen.scss');
+@include meta.load-css('./interfaces/WindowsXP/Components.scss');
+// WOD13 EDIT ADDITION END
 
 // Layouts
 @include meta.load-css('./layouts/Layout.scss');
