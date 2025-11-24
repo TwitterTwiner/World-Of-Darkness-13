@@ -2,6 +2,8 @@
 	//Shitty VtM vars I'm moving here so they're not strewn around the codebase
 	var/datum/vampireclane/clane
 
+	var/last_repainted_mark
+
 	var/phonevoicetag = 10
 
 	var/image/suckbar
@@ -9,6 +11,7 @@
 
 	var/killed_count = 0
 
+	var/datum/morality_path/MyPath
 	var/willpower_auto = FALSE
 
 	var/roundstart_vampire = FALSE

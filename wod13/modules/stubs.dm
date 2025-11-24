@@ -2,15 +2,9 @@
 /datum/species/kindred
 	name = "Vampire"
 
-SUBSYSTEM_DEF(city_time)
-	name = "City Time"
-	wait = 150
-	priority = FIRE_PRIORITY_DEFAULT
-
-	var/hour = 21
-	var/minutes = 0
-
-	var/timeofnight = "21:00"
+/datum/species/ghoul
+/datum/species/kuei_jin
+/datum/species/garou
 
 /obj/item/stack/dollar
 
@@ -21,3 +15,9 @@ SUBSYSTEM_DEF(city_time)
 /mob/living/carbon/human/proc/AdjustMasquerade(value, forced = FALSE)
 /mob/living/carbon/human/npc/proc/backinvisible(atom/A)
 /mob/living/proc/CheckEyewitness(mob/living/source, mob/attacker, range = 0, affects_source = FALSE)
+
+/proc/call_dharma(action, mob/living/carbon/human/cathayan)
+
+/datum/morality_path
+/datum/morality_path/proc/trigger_morality(trig_event)
+/mob/living/simple_animal/hostile/zombie
