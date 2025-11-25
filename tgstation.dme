@@ -6832,6 +6832,7 @@
 #include "wod13\modules\vtmb\electronics\phones\phone_voice.dm"
 #include "wod13\modules\vtmb\martial_arts\cowalker.dm"
 #include "wod13\modules\vtmb\npc\beastmaster.dm"
+#include "wod13\modules\vtmb\paths\_paths.dm"
 #include "wod13\modules\vtmb\subsystems\city_time.dm"
 #include "wod13\modules\vtmb\subsystems\faction_mark.dm"
 #include "wod13\modules\vtmb\subsystems\graveyard.dm"

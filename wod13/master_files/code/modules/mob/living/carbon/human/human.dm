@@ -11,9 +11,6 @@
 
 	var/killed_count = 0
 
-	var/datum/morality_path/MyPath
-	var/willpower_auto = FALSE
-
 	var/roundstart_vampire = FALSE
 
 	var/base_body_mod = ""

@@ -16,8 +16,6 @@ mob/living/carbon/human/npc/proc/Aggro(mob/M, attacked = FALSE)
 //mob/living/carbon/human/npc/proc/backinvisible(atom/A)
 /mob/living/proc/CheckEyewitness(mob/living/source, mob/attacker, range = 0, affects_source = FALSE)
 
-/datum/morality_path
-/datum/morality_path/proc/trigger_morality(trig_event)
 /mob/living/simple_animal/hostile/zombie
 
 /proc/get_vamp_skin_color(value = "albino")
