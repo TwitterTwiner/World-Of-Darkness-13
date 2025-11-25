@@ -158,3 +158,14 @@
 	. = ..()
 	pixel_w = rand(-8, 8)
 	pixel_z = rand(-8, 8)
+
+/mob/living/carbon/human/npc/hunter
+	vampire_faction = "City"
+	fights_anyway = TRUE
+	max_stat = 5
+
+/mob/living/carbon/human/npc/hunter/Initialize(mapload)
+	..()
+	my_weapon = new /obj/item/gun/ballistic/automatic/vampire/ak74/hunter(src)
+	ignores_warrant = TRUE
+	AssignSocialRole(/datum/socialrole/hunter)

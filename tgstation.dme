@@ -6847,5 +6847,6 @@
 #include "wod13\modules\wod13\npc_movement.dm"
 #include "wod13\modules\wod13\npc.dm"
 #include "wod13\modules\wod13\npcroles.dm"
+#include "wod13\modules\wod13\procs.dm"
 #include "wod13\modules\wod13\witness.dm"
 // END_INCLUDE

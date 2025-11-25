@@ -8,14 +8,7 @@
 
 /obj/item/stack/dollar
 
-/mob/living/carbon/human/proc/AdjustHumanity(value, limit, forced = FALSE)
-/mob/living/carbon/human/proc/AdjustMasquerade(value, forced = FALSE)
-/mob/living/proc/CheckEyewitness(mob/living/source, mob/attacker, range = 0, affects_source = FALSE)
-
 /mob/living/simple_animal/hostile/zombie
-
-/proc/get_vamp_skin_color(value = "albino")
-	return "vamp1"
 
 /datum/action/breathe_chi
 /datum/action/area_chi
@@ -49,3 +42,5 @@
 /obj/effect/fire
 /proc/adjust_gnosis(amount, mob/living/carbon/C, sound = TRUE)
 /mob/living/carbon/werewolf
+/datum/socialrole/hunter
+/datum/antagonist/small_hunter
