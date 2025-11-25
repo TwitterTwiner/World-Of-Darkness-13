@@ -8,12 +8,8 @@
 
 /obj/item/stack/dollar
 
-//mob/living/carbon/human/npc
-mob/living/carbon/human/npc/proc/Aggro(mob/M, attacked = FALSE)
-
 /mob/living/carbon/human/proc/AdjustHumanity(value, limit, forced = FALSE)
 /mob/living/carbon/human/proc/AdjustMasquerade(value, forced = FALSE)
-//mob/living/carbon/human/npc/proc/backinvisible(atom/A)
 /mob/living/proc/CheckEyewitness(mob/living/source, mob/attacker, range = 0, affects_source = FALSE)
 
 /mob/living/simple_animal/hostile/zombie
@@ -41,3 +37,15 @@ mob/living/carbon/human/npc/proc/Aggro(mob/M, attacked = FALSE)
 /mob/living/simple_animal
 	var/datum/warform/warform
 	var/mob/living/carbon/human/my_creator
+/datum/movespeed_modifier/silver_slowdown
+	multiplicative_slowdown = 0.3
+/obj/effect/decal/cleanable/gasoline
+/obj/item/gas_can
+	var/stored_gasoline
+/obj/item
+	var/vampire_cost = 0 //TEMPORAL COST
+	var/masquerade_violating = FALSE
+/obj/projectile/beam/beam_rifle/vampire
+/obj/effect/fire
+/proc/adjust_gnosis(amount, mob/living/carbon/C, sound = TRUE)
+/mob/living/carbon/werewolf

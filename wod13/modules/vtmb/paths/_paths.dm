@@ -51,7 +51,6 @@
 	if(!GLOB.canon_event)
 		return
 
-	var/special_role_name
 	if(owner.mind && owner.is_antag())
 		var/owner_roles = owner.mind.get_special_roles()
 		for(var/role in owner_roles)

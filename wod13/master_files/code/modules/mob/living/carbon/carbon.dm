@@ -25,6 +25,8 @@
 
 	var/last_rage_hit = 0
 
+	var/datum/auspice/auspice
+
 	var/list/beastmaster = list()
 	var/list/puppets = list()
 
