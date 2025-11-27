@@ -6811,6 +6811,7 @@
 #include "wod13\master_files\code\modules\mob\living\carbon\human\human.dm"
 #include "wod13\modules\stubs.dm"
 #include "wod13\modules\pig\pig.dm"
+#include "wod13\modules\tgremoves\species.dm"
 #include "wod13\modules\vtmb\archetypes.dm"
 #include "wod13\modules\vtmb\dharma.dm"
 #include "wod13\modules\vtmb\landmarks.dm"
