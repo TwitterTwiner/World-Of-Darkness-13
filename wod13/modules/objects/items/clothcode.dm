@@ -1369,7 +1369,7 @@
 	name = "Bogatyr helmet"
 	desc = "A regal helmet made of unknown materials."
 	icon_state = "bogatyr_helmet"
-	armor_type = /datum/armor/head/bogatyr
+	armor_type = /datum/armor/head/heavy/bogatyr
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -1720,7 +1720,6 @@
 /datum/armor/pntx/janitor
 	bio = 100
 	acid = 15
-	rad = 5
 
 /obj/item/clothing/under/pentex/pentex_shortsleeve
 	name = "Endron polo-shirt"
