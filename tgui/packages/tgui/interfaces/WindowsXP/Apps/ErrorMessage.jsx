@@ -1,6 +1,6 @@
 import error_icon from '../../../assets/WindowsXP/897(32x32).png';
 
-export const Error = (props) => {
+export const ErrorMessage = (props) => {
   const { app, act } = props;
   return (
     <div className="error_popup">

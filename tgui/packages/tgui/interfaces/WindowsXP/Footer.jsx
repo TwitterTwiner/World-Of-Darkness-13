@@ -19,7 +19,7 @@ export const Footer = (props) => {
       hour = 12;
     }
     if (min < 10) {
-      min = '0' + min;
+      min = `0${min}`;
     }
     return `${hour}:${min} ${hourPostFix}`;
   };
