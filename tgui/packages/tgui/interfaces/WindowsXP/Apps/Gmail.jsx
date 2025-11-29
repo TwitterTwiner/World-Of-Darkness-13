@@ -23,7 +23,7 @@ export const Gmail = (props) => {
         <div className="mail-nav-panel">
           <div
             className={
-              'nav-link' + (app.screen === 0 ? ' active-nav-link' : '')
+              `nav-link${app.screen === 0 ? ' active-nav-link' : ''}`
             }
             onClick={() => act('gmail_switch_screen', { screen: 0 })}
           >
@@ -32,15 +32,15 @@ export const Gmail = (props) => {
           <div className="sidebar-links">
             <div
               className={
-                'nav-link' + (app.screen === 1 ? ' active-nav-link' : '')
+                `nav-link${app.screen === 1 ? ' active-nav-link' : ''}`
               }
               onClick={() => act('gmail_switch_screen', { screen: 1 })}
             >
-              {'Inbox (' + app.emails.length + ')'}
+              {`Inbox (${app.emails.length})`}
             </div>
             <div
               className={
-                'nav-link' + (app.screen === 2 ? ' active-nav-link' : '')
+                `nav-link${app.screen === 2 ? ' active-nav-link' : ''}`
               }
               onClick={() => act('gmail_switch_screen', { screen: 2 })}
             >
@@ -211,12 +211,12 @@ const Email = (props) => {
       </div>
       <div className="text-block">
         {email.sender.length > 13
-          ? email.sender.substring(0, 10) + '...'
+          ? `${email.sender.substring(0, 10)}...`
           : email.sender}
       </div>
       <div className="text-block email-message">
         {email.message.length > 11
-          ? email.message.substring(0, 8) + '...'
+          ? `${email.message.substring(0, 8)}...`
           : email.message}
       </div>
       <div className="text-block date">{email.date}</div>
